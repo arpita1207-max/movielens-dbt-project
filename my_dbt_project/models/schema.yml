@@ -1,0 +1,53 @@
+models:
+  - name: dim_movies
+    description: dimension table for cleaned metadata
+    columns:
+      - name: movie_id
+        description: Primary Key of the movie
+        tests:
+          - not_null
+          - unique
+      - name: movie_title
+        description: Standardized movie title
+        tests:
+          - not_null
+      - name: genres_array
+        description: List of genres in array format
+      - name: genres
+        description: Raw genre from raw source
+      - name: release_year
+        description: Year of movie release extracted from title
+  - name: dim_users
+    description: dimension table for user metadata
+    columns:
+      - name: user_id
+        description: Primary Key of the users
+        tests:
+          - not_null
+          - unique
+  - name: dim_movies_with_tags
+    description: dimension table for movies with tags
+    columns:
+      - name: movie_id
+        description: Surgogate Key of the movie
+        tests:
+          - not_null
+      - name: tag
+        description: Surrogate Key of the tag 
+        tests:
+          - not_null
+  - name: fct_ratings
+    description: fact table for movie ratings
+    columns:
+      - name: movie_id
+        description: Foreign Key of the movie
+        tests:
+          - not_null
+          - to_relation:
+              relation: dim_movies
+              field: movie_id
+      - name: rating
+        description: Provided rating of the user
+        tests:
+          - not_null
+

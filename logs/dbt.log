@@ -1,0 +1,457 @@
+[0m18:47:44.120204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F8BCAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F99F5700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F99F5940>]}
+
+
+============================== 18:47:44.244457 | f8aae0fa-91b2-43b8-8a49-05e828b67245 ==============================
+[0m18:47:44.244457 [info ] [MainThread]: Running with dbt=1.9.8
+[0m18:47:44.244457 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init my-dbt-project', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:44.302585 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object.. Dictionary: {'dir': WindowsPath('C:/Users/arpit/.dbt')}
+[0m18:47:44.302585 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m18:48:28.689618 [debug] [MainThread]: Starter project path: C:\Users\arpit\anaconda3\lib\site-packages\dbt\include\starter_project
+[0m18:48:29.315948 [info ] [MainThread]: 
+Your new dbt project "my_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:48:29.315948 [info ] [MainThread]: Setting up your profile.
+[0m18:53:08.225316 [info ] [MainThread]: Profile my_dbt_project written to C:\Users\arpit\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:53:08.233140 [debug] [MainThread]: Command `dbt init` succeeded at 18:53:08.232143 after 324.28 seconds
+[0m18:53:08.235146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F8BCAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F99F54F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F9972790>]}
+[0m18:53:08.237188 [debug] [MainThread]: Flushing usage events
+[0m18:53:10.731903 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:05:12.079527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C6A49A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C6DEA820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C7877940>]}
+
+
+============================== 19:05:12.080540 | 48aab468-c00f-429b-9a2f-859e49999521 ==============================
+[0m19:05:12.080540 [info ] [MainThread]: Running with dbt=1.9.8
+[0m19:05:12.080540 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:05:12.088313 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\arpit\dbt-core\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:05:12.090336 [debug] [MainThread]: Command `dbt run` failed at 19:05:12.090336 after 0.26 seconds
+[0m19:05:12.090336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C6A49A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C78400D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C7877940>]}
+[0m19:05:12.090336 [debug] [MainThread]: Flushing usage events
+[0m19:05:13.932020 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:31:06.100187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0ABE8A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0BA1A9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0BA1A790>]}
+
+
+============================== 19:31:06.365846 | 75b8199e-9f77-482a-b1e4-f2bc8864e62a ==============================
+[0m19:31:06.365846 [info ] [MainThread]: Running with dbt=1.9.8
+[0m19:31:06.365846 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:31:06.381430 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\arpit\dbt-core\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:31:06.390071 [debug] [MainThread]: Command `dbt run` failed at 19:31:06.390071 after 1.21 seconds
+[0m19:31:06.395896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0ABE8A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0BA1A730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F0BA1A850>]}
+[0m19:31:06.399056 [debug] [MainThread]: Flushing usage events
+[0m19:31:08.672833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:31:26.847146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC441D9A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC45019AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC450198B0>]}
+
+
+============================== 15:31:27.712679 | f799b044-2513-4da0-b294-eb5c52e5802a ==============================
+[0m15:31:27.712679 [info ] [MainThread]: Running with dbt=1.9.8
+[0m15:31:27.837303 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m src_ratings.sql', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:31:27.978822 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\arpit\dbt-core\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:31:27.994455 [debug] [MainThread]: Command `dbt run` failed at 15:31:27.994455 after 8.62 seconds
+[0m15:31:27.994455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC441D9A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC45019850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BC45019970>]}
+[0m15:31:27.994455 [debug] [MainThread]: Flushing usage events
+[0m15:31:38.256658 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:21:40.644594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBAF4AAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBB02E9970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBB02E9760>]}
+
+
+============================== 22:21:41.124101 | 26bb372b-faa4-4840-9d58-1e42caae054c ==============================
+[0m22:21:41.124101 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:21:41.168261 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -m src_movies.sql', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:21:41.172367 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\arpit\dbt-core\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:21:41.182053 [debug] [MainThread]: Command `dbt run` failed at 22:21:41.181062 after 1.36 seconds
+[0m22:21:41.185548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBAF4AAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBB02E9760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBB02E9A30>]}
+[0m22:21:41.190655 [debug] [MainThread]: Flushing usage events
+[0m22:21:46.647648 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:26:17.099609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AB71AA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AC54FAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AC54F850>]}
+
+
+============================== 22:26:17.121272 | 3fed6de0-247a-4ee3-9044-bad421b0db17 ==============================
+[0m22:26:17.121272 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:26:17.128275 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run -m src_movies.sql', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:49.593834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3fed6de0-247a-4ee3-9044-bad421b0db17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A94D4C10>]}
+[0m22:29:49.835551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3fed6de0-247a-4ee3-9044-bad421b0db17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AF312220>]}
+[0m22:29:49.843266 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:29:51.459765 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m22:29:51.469794 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:29:51.473770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3fed6de0-247a-4ee3-9044-bad421b0db17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AC52A5E0>]}
+[0m22:30:00.477580 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.dim
+- models.my_dbt_project.fct
+- models.my_dbt_project.example
+[0m22:30:00.488201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3fed6de0-247a-4ee3-9044-bad421b0db17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AF7B5040>]}
+[0m22:30:00.593856 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:30:00.870805 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:30:04.134588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3fed6de0-247a-4ee3-9044-bad421b0db17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AF7FD460>]}
+[0m22:30:04.139354 [info ] [MainThread]: Found 472 macros
+[0m22:30:04.143116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3fed6de0-247a-4ee3-9044-bad421b0db17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AF7F1070>]}
+[0m22:30:04.147461 [warn ] [MainThread]: The selection criterion 'src_movies.sql' does not match any enabled nodes
+[0m22:30:04.155365 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:30:04.161971 [debug] [MainThread]: Command end result
+[0m22:30:04.292781 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:30:04.297515 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:30:04.304794 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m22:30:04.307794 [debug] [MainThread]: Command `dbt run` succeeded at 22:30:04.307239 after 227.74 seconds
+[0m22:30:04.308789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AB71AA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AF4810D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231AF3A3B50>]}
+[0m22:30:04.309491 [debug] [MainThread]: Flushing usage events
+[0m22:30:07.675947 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:58:45.025624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2AF59A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2BD8FA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2BD8F7C0>]}
+
+
+============================== 22:58:45.032754 | 106cc9f3-b1e8-4be0-ad63-3606cee087a0 ==============================
+[0m22:58:45.032754 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:58:45.034278 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -m src_movies.sql', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:58:49.321365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '106cc9f3-b1e8-4be0-ad63-3606cee087a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2BD7A3D0>]}
+[0m22:58:49.493542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '106cc9f3-b1e8-4be0-ad63-3606cee087a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2BD7A5B0>]}
+[0m22:58:49.496261 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:58:50.147700 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m22:58:50.387452 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:58:50.391048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '106cc9f3-b1e8-4be0-ad63-3606cee087a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2B319310>]}
+[0m22:58:52.512976 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.dim
+- models.my_dbt_project.fct
+- models.my_dbt_project.example
+[0m22:58:52.523184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '106cc9f3-b1e8-4be0-ad63-3606cee087a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE25881DC0>]}
+[0m22:58:52.630425 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:58:52.635772 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:58:52.701258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '106cc9f3-b1e8-4be0-ad63-3606cee087a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2EB92730>]}
+[0m22:58:52.703440 [info ] [MainThread]: Found 472 macros
+[0m22:58:52.705705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '106cc9f3-b1e8-4be0-ad63-3606cee087a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2EF7E1C0>]}
+[0m22:58:52.707963 [warn ] [MainThread]: The selection criterion 'src_movies.sql' does not match any enabled nodes
+[0m22:58:52.710981 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:58:52.713662 [debug] [MainThread]: Command end result
+[0m22:58:52.798089 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:58:52.802852 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:58:52.810865 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m22:58:52.813155 [debug] [MainThread]: Command `dbt run` succeeded at 22:58:52.813155 after 8.00 seconds
+[0m22:58:52.814534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2AF59A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2BD7A3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2EB3DFD0>]}
+[0m22:58:52.815724 [debug] [MainThread]: Flushing usage events
+[0m22:58:55.230066 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:03:38.217077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F02EA89A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F02F8BFB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F02F8BF8B0>]}
+
+
+============================== 23:03:38.223055 | d834e193-54b6-43b0-9c4a-88048b13b0ed ==============================
+[0m23:03:38.223055 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:03:38.224493 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m src_genome_scores.sql', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:03:41.032901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd834e193-54b6-43b0-9c4a-88048b13b0ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F03262E0A0>]}
+[0m23:03:41.193839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd834e193-54b6-43b0-9c4a-88048b13b0ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F02F39ED00>]}
+[0m23:03:41.197403 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:03:41.843925 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:03:42.197877 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:03:42.198630 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:03:42.201041 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.fct
+- models.my_dbt_project.dim
+- models.my_dbt_project.example
+[0m23:03:42.216311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd834e193-54b6-43b0-9c4a-88048b13b0ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F032BACF40>]}
+[0m23:03:42.367860 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:03:42.372437 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:03:42.428189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd834e193-54b6-43b0-9c4a-88048b13b0ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F032B787C0>]}
+[0m23:03:42.429667 [info ] [MainThread]: Found 472 macros
+[0m23:03:42.431586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd834e193-54b6-43b0-9c4a-88048b13b0ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F032B7E2B0>]}
+[0m23:03:42.433164 [warn ] [MainThread]: The selection criterion 'src_genome_scores.sql' does not match any enabled nodes
+[0m23:03:42.435499 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:03:42.440901 [debug] [MainThread]: Command end result
+[0m23:03:42.523411 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:03:42.529041 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:03:42.536209 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:03:42.539391 [debug] [MainThread]: Command `dbt run` succeeded at 23:03:42.539120 after 4.49 seconds
+[0m23:03:42.540705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F02EA89A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F02F39ED00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F032641B20>]}
+[0m23:03:42.541633 [debug] [MainThread]: Flushing usage events
+[0m23:03:44.562611 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:32.538517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021332ED89D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021333D0B550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021333D0B7C0>]}
+
+
+============================== 23:05:32.545838 | 83802bbe-2cd2-4800-823e-fc92d7181934 ==============================
+[0m23:05:32.545838 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:05:32.547820 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -m src_genome_scores.sql', 'send_anonymous_usage_stats': 'True'}
+[0m23:05:35.578205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '83802bbe-2cd2-4800-823e-fc92d7181934', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021330CA5D60>]}
+[0m23:05:35.740735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '83802bbe-2cd2-4800-823e-fc92d7181934', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213337DC400>]}
+[0m23:05:35.744293 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:05:36.494520 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:05:36.795920 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:05:36.797490 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:05:36.799398 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.fct
+- models.my_dbt_project.example
+- models.my_dbt_project.dim
+[0m23:05:36.809687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '83802bbe-2cd2-4800-823e-fc92d7181934', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021336FFCEB0>]}
+[0m23:05:36.920028 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:05:36.924971 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:05:36.976034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '83802bbe-2cd2-4800-823e-fc92d7181934', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021336FC8820>]}
+[0m23:05:36.977322 [info ] [MainThread]: Found 472 macros
+[0m23:05:36.979196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '83802bbe-2cd2-4800-823e-fc92d7181934', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021336FCEA90>]}
+[0m23:05:36.980125 [warn ] [MainThread]: The selection criterion 'src_genome_scores.sql' does not match any enabled nodes
+[0m23:05:36.982647 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:05:36.988355 [debug] [MainThread]: Command end result
+[0m23:05:37.045723 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:05:37.049751 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:05:37.057228 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:05:37.060067 [debug] [MainThread]: Command `dbt run` succeeded at 23:05:37.060067 after 4.72 seconds
+[0m23:05:37.061459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021332ED89D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133326C5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021336FC8820>]}
+[0m23:05:37.062172 [debug] [MainThread]: Flushing usage events
+[0m23:05:39.130427 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:07:10.941913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F79F469A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A029EB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A029E8B0>]}
+
+
+============================== 23:07:10.948168 | a384525b-33b4-467e-a749-8ff8acf0a075 ==============================
+[0m23:07:10.948168 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:07:10.949757 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run -m src_genome_scores.sql', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:07:13.443103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a384525b-33b4-467e-a749-8ff8acf0a075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A300E0A0>]}
+[0m23:07:13.584481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a384525b-33b4-467e-a749-8ff8acf0a075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F79FD7E820>]}
+[0m23:07:13.587297 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:07:14.122214 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:07:14.367217 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:07:14.368020 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:07:14.369546 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.example
+- models.my_dbt_project.dim
+- models.my_dbt_project.fct
+[0m23:07:14.379203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a384525b-33b4-467e-a749-8ff8acf0a075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A358CF40>]}
+[0m23:07:14.481818 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:07:14.485889 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:07:14.528034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a384525b-33b4-467e-a749-8ff8acf0a075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A35587C0>]}
+[0m23:07:14.529625 [info ] [MainThread]: Found 472 macros
+[0m23:07:14.532003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a384525b-33b4-467e-a749-8ff8acf0a075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A355E2B0>]}
+[0m23:07:14.533640 [warn ] [MainThread]: The selection criterion 'src_genome_scores.sql' does not match any enabled nodes
+[0m23:07:14.535065 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:07:14.540343 [debug] [MainThread]: Command end result
+[0m23:07:14.586028 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:07:14.590118 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:07:14.596696 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:07:14.599114 [debug] [MainThread]: Command `dbt run` succeeded at 23:07:14.598568 after 3.82 seconds
+[0m23:07:14.600047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F79F469A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F79FD7E820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F7A3021B20>]}
+[0m23:07:14.600823 [debug] [MainThread]: Flushing usage events
+[0m23:07:16.678561 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:11:27.992055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001995F287AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199600C9B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199600C98E0>]}
+
+
+============================== 23:11:27.997977 | 46d9d3c0-fe4d-4c71-b126-42bb5b4ea77e ==============================
+[0m23:11:27.997977 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:11:27.999515 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --select src_genome_scores.sql', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:11:30.467064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '46d9d3c0-fe4d-4c71-b126-42bb5b4ea77e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019962E75CA0>]}
+[0m23:11:30.613458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '46d9d3c0-fe4d-4c71-b126-42bb5b4ea77e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001995FF0E670>]}
+[0m23:11:30.615905 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:11:31.147801 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:11:31.404008 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:11:31.404707 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:11:31.406501 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.example
+- models.my_dbt_project.dim
+- models.my_dbt_project.fct
+[0m23:11:31.419200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '46d9d3c0-fe4d-4c71-b126-42bb5b4ea77e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199633ABFA0>]}
+[0m23:11:31.549356 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:11:31.554232 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:11:31.592523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '46d9d3c0-fe4d-4c71-b126-42bb5b4ea77e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996337C460>]}
+[0m23:11:31.593521 [info ] [MainThread]: Found 472 macros
+[0m23:11:31.594959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '46d9d3c0-fe4d-4c71-b126-42bb5b4ea77e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199632DF0D0>]}
+[0m23:11:31.596479 [warn ] [MainThread]: The selection criterion 'src_genome_scores.sql' does not match any enabled nodes
+[0m23:11:31.598461 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:11:31.603448 [debug] [MainThread]: Command end result
+[0m23:11:31.652138 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:11:31.658201 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:11:31.666889 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:11:31.670012 [debug] [MainThread]: Command `dbt run` succeeded at 23:11:31.669764 after 3.84 seconds
+[0m23:11:31.670785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001995F287AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996337C460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019962F11CA0>]}
+[0m23:11:31.671542 [debug] [MainThread]: Flushing usage events
+[0m23:11:33.933320 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:15:24.376547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B3E57AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B5C5B4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B5C5B730>]}
+
+
+============================== 23:15:24.382545 | 1cd0e17d-deb3-43e3-bf75-de2bf8f8049d ==============================
+[0m23:15:24.382545 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:15:24.383843 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -m src_genome_scores.sql', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:15:26.880144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1cd0e17d-deb3-43e3-bf75-de2bf8f8049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B23E4DF0>]}
+[0m23:15:27.012452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1cd0e17d-deb3-43e3-bf75-de2bf8f8049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B52575E0>]}
+[0m23:15:27.015118 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:15:27.540768 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:15:27.788588 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:15:27.789314 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:15:27.790781 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.fct
+- models.my_dbt_project.example
+- models.my_dbt_project.dim
+[0m23:15:27.800235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1cd0e17d-deb3-43e3-bf75-de2bf8f8049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B8F4CFA0>]}
+[0m23:15:27.894211 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:15:27.898611 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:15:27.936525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1cd0e17d-deb3-43e3-bf75-de2bf8f8049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B8F472E0>]}
+[0m23:15:27.937897 [info ] [MainThread]: Found 472 macros
+[0m23:15:27.940035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1cd0e17d-deb3-43e3-bf75-de2bf8f8049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B8DD2070>]}
+[0m23:15:27.941209 [warn ] [MainThread]: The selection criterion 'src_genome_scores.sql' does not match any enabled nodes
+[0m23:15:27.969698 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:15:27.979253 [debug] [MainThread]: Command end result
+[0m23:15:28.040460 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:15:28.044844 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:15:28.053757 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:15:28.057828 [debug] [MainThread]: Command `dbt run` succeeded at 23:15:28.057129 after 3.84 seconds
+[0m23:15:28.059381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B3E57AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B8F47610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9B8AB2BE0>]}
+[0m23:15:28.060645 [debug] [MainThread]: Flushing usage events
+[0m23:15:30.218568 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:16:09.603613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190075CAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190083FEB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190083FE8B0>]}
+
+
+============================== 23:16:09.609407 | cc641134-0ac0-42e4-a72a-5def22ced953 ==============================
+[0m23:16:09.609407 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:16:09.610738 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -m src_genome_scores', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:16:12.609642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc641134-0ac0-42e4-a72a-5def22ced953', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B198850>]}
+[0m23:16:12.765007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc641134-0ac0-42e4-a72a-5def22ced953', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B22B2B0>]}
+[0m23:16:12.768199 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:16:13.408395 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:16:13.768729 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:16:13.770070 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:16:13.771395 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.my_dbt_project.dim
+- models.my_dbt_project.fct
+- models.my_dbt_project.example
+[0m23:16:13.782089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc641134-0ac0-42e4-a72a-5def22ced953', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B6ECF10>]}
+[0m23:16:13.896489 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:16:13.901948 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:16:13.945814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc641134-0ac0-42e4-a72a-5def22ced953', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B57BD90>]}
+[0m23:16:13.947171 [info ] [MainThread]: Found 472 macros
+[0m23:16:13.948675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc641134-0ac0-42e4-a72a-5def22ced953', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B6D6160>]}
+[0m23:16:13.950047 [warn ] [MainThread]: The selection criterion 'src_genome_scores' does not match any enabled nodes
+[0m23:16:13.952345 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:16:13.957762 [debug] [MainThread]: Command end result
+[0m23:16:14.001076 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:16:14.005171 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:16:14.013762 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:16:14.016491 [debug] [MainThread]: Command `dbt run` succeeded at 23:16:14.015763 after 4.57 seconds
+[0m23:16:14.017217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190075CAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B6E7CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001900B3442B0>]}
+[0m23:16:14.017983 [debug] [MainThread]: Flushing usage events
+[0m23:16:16.008560 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:18:25.522863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE23E76A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE24CAEAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE24CAE850>]}
+
+
+============================== 23:18:25.528416 | 8423680e-d314-4905-bcff-e769cb16b3e8 ==============================
+[0m23:18:25.528416 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:18:25.530461 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run -m src_genome_scores', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:18:28.000011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8423680e-d314-4905-bcff-e769cb16b3e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE21C332E0>]}
+[0m23:18:28.133188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8423680e-d314-4905-bcff-e769cb16b3e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE24799160>]}
+[0m23:18:28.135268 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:18:28.656927 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:18:28.733818 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m23:18:28.735099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8423680e-d314-4905-bcff-e769cb16b3e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE2472CE20>]}
+[0m23:18:30.373482 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.my_dbt_project.dim
+- models.my_dbt_project.staging
+- models.my_dbt_project.fct
+- models.my_dbt_project.example
+[0m23:18:30.384821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8423680e-d314-4905-bcff-e769cb16b3e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE27F5DE50>]}
+[0m23:18:30.473760 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:18:30.477246 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:18:30.515328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8423680e-d314-4905-bcff-e769cb16b3e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE27A7A250>]}
+[0m23:18:30.516328 [info ] [MainThread]: Found 472 macros
+[0m23:18:30.518193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8423680e-d314-4905-bcff-e769cb16b3e8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE27A84520>]}
+[0m23:18:30.519261 [warn ] [MainThread]: The selection criterion 'src_genome_scores' does not match any enabled nodes
+[0m23:18:30.521345 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:18:30.522663 [debug] [MainThread]: Command end result
+[0m23:18:30.609083 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:18:30.612607 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:18:30.619144 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:18:30.621253 [debug] [MainThread]: Command `dbt run` succeeded at 23:18:30.621253 after 5.28 seconds
+[0m23:18:30.621936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE23E76A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE2293AC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE21253C10>]}
+[0m23:18:30.623228 [debug] [MainThread]: Flushing usage events
+[0m23:18:32.724407 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:19:05.316561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC33FF89A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC34E2BA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC34E2B7C0>]}
+
+
+============================== 23:19:05.322224 | 4caaf144-c974-48e6-a45a-e83b63f2fb46 ==============================
+[0m23:19:05.322224 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:19:05.324167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -m src_genome_scores.sql', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:19:07.842942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4caaf144-c974-48e6-a45a-e83b63f2fb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC31DC5D30>]}
+[0m23:19:07.975480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4caaf144-c974-48e6-a45a-e83b63f2fb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC37BF72B0>]}
+[0m23:19:07.977915 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:19:08.504627 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:19:08.783819 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:19:08.784522 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:19:08.785888 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.my_dbt_project.example
+- models.my_dbt_project.fct
+- models.my_dbt_project.staging
+- models.my_dbt_project.dim
+[0m23:19:08.794553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4caaf144-c974-48e6-a45a-e83b63f2fb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC3811CE80>]}
+[0m23:19:08.892200 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:19:08.896184 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:19:08.936656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4caaf144-c974-48e6-a45a-e83b63f2fb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC380E8310>]}
+[0m23:19:08.937377 [info ] [MainThread]: Found 472 macros
+[0m23:19:08.938827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4caaf144-c974-48e6-a45a-e83b63f2fb46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC3811A0D0>]}
+[0m23:19:08.940348 [warn ] [MainThread]: The selection criterion 'src_genome_scores.sql' does not match any enabled nodes
+[0m23:19:08.942163 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:19:08.947422 [debug] [MainThread]: Command end result
+[0m23:19:08.994199 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:19:08.998147 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:19:09.005104 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:19:09.007974 [debug] [MainThread]: Command `dbt run` succeeded at 23:19:09.007826 after 3.85 seconds
+[0m23:19:09.008626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC33FF89A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC37C503D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC37C7C0D0>]}
+[0m23:19:09.010078 [debug] [MainThread]: Flushing usage events
+[0m23:19:10.878700 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:27:55.123746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C84798970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C855CFA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C855CF7C0>]}
+
+
+============================== 23:27:55.280813 | 88347085-edcf-4014-a5ef-98efe2a7c701 ==============================
+[0m23:27:55.280813 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:27:55.285720 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -m dim_movies_with_tags.sql', 'send_anonymous_usage_stats': 'True'}
+[0m23:31:48.910002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88347085-edcf-4014-a5ef-98efe2a7c701', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C8838E1C0>]}
+[0m23:31:49.033026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88347085-edcf-4014-a5ef-98efe2a7c701', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C85546760>]}
+[0m23:31:49.033026 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m23:31:50.417632 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m23:31:57.487964 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:31:57.487964 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:31:57.487964 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.my_dbt_project.staging
+- models.my_dbt_project.fct
+- models.my_dbt_project.dim
+- models.my_dbt_project.example
+[0m23:31:57.504806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88347085-edcf-4014-a5ef-98efe2a7c701', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C888CEDF0>]}
+[0m23:31:57.704906 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:31:57.721247 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:32:02.359660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88347085-edcf-4014-a5ef-98efe2a7c701', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C8874D0A0>]}
+[0m23:32:02.359660 [info ] [MainThread]: Found 472 macros
+[0m23:32:02.359660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88347085-edcf-4014-a5ef-98efe2a7c701', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C888CC220>]}
+[0m23:32:02.359660 [warn ] [MainThread]: The selection criterion 'dim_movies_with_tags.sql' does not match any enabled nodes
+[0m23:32:02.359660 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:32:02.377050 [debug] [MainThread]: Command end result
+[0m23:32:02.556470 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m23:32:02.556470 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m23:32:02.679944 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m23:32:02.690797 [debug] [MainThread]: Command `dbt run` succeeded at 23:32:02.690797 after 248.50 seconds
+[0m23:32:02.692745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C84798970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C85546760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C83265F10>]}
+[0m23:32:02.694800 [debug] [MainThread]: Flushing usage events
+[0m23:32:06.838912 [debug] [MainThread]: An error was encountered while trying to flush usage events

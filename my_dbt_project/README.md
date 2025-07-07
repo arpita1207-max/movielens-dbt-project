@@ -38,7 +38,7 @@ my_dbt_project/
 ├── dbt_project.yml
 └── README.md
 ```
-
+```
 ✅ Features
 ✅ Staging Layer to standardize and rename raw columns
 
@@ -65,7 +65,8 @@ my_dbt_project/
 2.Unique keys
 
 3.Relationship integrity
-
+```
+```
 
 📊 Data Flow (Lineage)
 
@@ -82,7 +83,9 @@ dbt test
 # View lineage in dbt docs
 dbt docs generate
 dbt docs serve
+```
 
+```
 
 📌 Sample Analytics
 
@@ -97,9 +100,9 @@ dbt docs serve
 🧠 Genre-based Movie Grouping
 
 📉 Null Analysis on Critical Columns
+```
 
-
-
+```
 📐 Design Choices
 
 All raw models prefixed with src_
@@ -111,8 +114,9 @@ Tags and genre handled via exploded arrays
 Snapshotting tags enables tracking tag updates over time
 
 Modular macros to reuse logic for data QA
+```
 
-
+```
 
 🚀 Future Enhancements
 
@@ -123,10 +127,12 @@ Track user behavior over time
 Integration with a BI tool (Power BI, Looker, etc.)
 
 Expose cleaned models via APIs for recommendation engine
+```
 
-
+```
 📚 Credits
 
 MovieLens dataset by GroupLens Research
 
 dbt (Data Build Tool) by dbt Labs
+```

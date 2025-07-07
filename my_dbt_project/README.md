@@ -1,4 +1,6 @@
 Welcome to your new dbt project!
+![image](https://github.com/user-attachments/assets/4a53d1dd-7eec-45e2-ad05-d4d339aa8a93)
+
 
 ### Using the starter project
 

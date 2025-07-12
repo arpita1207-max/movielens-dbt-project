@@ -38,9 +38,15 @@ jobs:
         run: dbt deps
         working-directory: my_dbt_project
 
+      - name: Clean dbt project
+        run: dbt clean
+        working-directory: my_dbt_project
+
       - name: Run dbt snapshots
         run: dbt snapshot --profiles-dir ..
         working-directory: my_dbt_project
+      
+      
 
       - name: Run dbt run
         run: dbt run --profiles-dir ..

@@ -43,8 +43,8 @@ models:
         description: Foreign Key of the movie
         tests:
           - not_null
-          - to_relation:
-              relation: dim_movies
+          - relationships:
+              to: ref('dim_movies')
               field: movie_id
       - name: rating
         description: Provided rating of the user

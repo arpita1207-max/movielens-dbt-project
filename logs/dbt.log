@@ -455,3 +455,208 @@ There are 4 unused configuration paths:
 [0m23:32:02.692745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C84798970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C85546760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C83265F10>]}
 [0m23:32:02.694800 [debug] [MainThread]: Flushing usage events
 [0m23:32:06.838912 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:25:22.306392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993CFF9A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993DE2AAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993DE2A880>]}
+
+
+============================== 22:25:22.517581 | 36d77cfa-5923-437f-b9c7-62d98fa0d925 ==============================
+[0m22:25:22.517581 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:25:22.519494 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt docs serve', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:27:19.481002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36d77cfa-5923-437f-b9c7-62d98fa0d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993ADB4AF0>]}
+[0m22:27:19.614483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36d77cfa-5923-437f-b9c7-62d98fa0d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993DDF1070>]}
+[0m22:37:22.905652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0078E7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0096EA2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0096EA520>]}
+
+
+============================== 22:37:22.911986 | 7a74395a-0aa1-45dc-8215-719355f1abc6 ==============================
+[0m22:37:22.911986 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:37:22.913905 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:37:29.433960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7a74395a-0aa1-45dc-8215-719355f1abc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0091AABB0>]}
+[0m22:37:29.589746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7a74395a-0aa1-45dc-8215-719355f1abc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A008C28970>]}
+[0m22:37:29.593005 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:37:30.964693 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m22:37:35.085581 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:37:35.087041 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:37:35.088751 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.my_dbt_project.fct
+- models.my_dbt_project.dim
+- models.my_dbt_project.staging
+- models.my_dbt_project.example
+[0m22:37:35.112857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7a74395a-0aa1-45dc-8215-719355f1abc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A00C9D6130>]}
+[0m22:37:35.511103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7a74395a-0aa1-45dc-8215-719355f1abc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A00CA02E50>]}
+[0m22:37:35.511825 [info ] [MainThread]: Found 472 macros
+[0m22:37:35.514051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a74395a-0aa1-45dc-8215-719355f1abc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A00CA02DF0>]}
+[0m22:37:35.516643 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:37:35.523830 [debug] [MainThread]: Command end result
+[0m22:37:35.747944 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:37:35.817354 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:37:35.824220 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m22:37:35.830041 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m22:37:35.831224 [info ] [MainThread]: Building catalog
+[0m22:37:41.183842 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\arpit\dbt-core\target\catalog.json
+[0m22:37:41.289451 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:37:41.294555 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:37:41.295846 [info ] [MainThread]: Catalog written to C:\Users\arpit\dbt-core\target\catalog.json
+[0m22:37:41.299869 [debug] [MainThread]: Command `dbt docs generate` succeeded at 22:37:41.299363 after 18.84 seconds
+[0m22:37:41.300763 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m22:37:41.301461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0078E7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A00CA18640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A00CA185E0>]}
+[0m22:37:41.302378 [debug] [MainThread]: Flushing usage events
+[0m22:37:45.050232 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:38:10.029470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DBCC08A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DBDA39A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DBDA39820>]}
+
+
+============================== 22:38:10.035313 | dbbec0ff-3941-48e5-ba61-7465f51ec815 ==============================
+[0m22:38:10.035313 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:38:10.036847 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt docs serve', 'send_anonymous_usage_stats': 'True'}
+[0m22:38:12.485357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dbbec0ff-3941-48e5-ba61-7465f51ec815', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC07F3FD0>]}
+[0m22:38:12.623493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dbbec0ff-3941-48e5-ba61-7465f51ec815', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DBD4C4280>]}
+[0m22:38:14.934825 [error] [MainThread]: Encountered an error:
+[WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+[0m22:38:15.159422 [error] [MainThread]: Encountered an error:
+
+[0m22:38:15.436907 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\main.py", line 301, in docs_serve
+    results = task.run()
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\task\docs\serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+
+[0m22:38:15.481543 [debug] [MainThread]: Command `dbt docs serve` failed at 22:38:15.480860 after 5.63 seconds
+[0m22:38:15.483614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DBCC08A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC095CBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DC09D5A30>]}
+[0m22:38:15.485662 [debug] [MainThread]: Flushing usage events
+[0m22:38:16.196072 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\main.py", line 301, in docs_serve
+    results = task.run()
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 237, in serve_forever
+    self._handle_request_noblock()
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\arpit\anaconda3\lib\http\server.py", line 668, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "C:\Users\arpit\anaconda3\lib\http\server.py", line 433, in handle
+    self.handle_one_request()
+  File "C:\Users\arpit\anaconda3\lib\http\server.py", line 401, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "C:\Users\arpit\anaconda3\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+[0m22:38:16.200974 [debug] [MainThread]: Command `dbt docs serve` failed at 22:38:16.200294 after 774.36 seconds
+[0m22:38:16.201644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993CFF9A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019940E09B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019940E09E50>]}
+[0m22:38:16.202954 [debug] [MainThread]: Flushing usage events
+[0m22:38:17.470892 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:38:18.104193 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:02.132228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878AABAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878B895790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878AEE6790>]}
+
+
+============================== 22:42:02.139515 | 6f013441-f7e0-46f2-8872-839b2a285356 ==============================
+[0m22:42:02.139515 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:42:02.141552 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:06.050583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6f013441-f7e0-46f2-8872-839b2a285356', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878B73E490>]}
+[0m22:42:06.221929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6f013441-f7e0-46f2-8872-839b2a285356', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878E6B6BB0>]}
+[0m22:48:00.182427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA02DA89D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA03BE9970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA03BE9700>]}
+
+
+============================== 22:48:00.190293 | 7bfe284f-1c4b-43a2-931b-31c7109616fa ==============================
+[0m22:48:00.190293 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:48:00.193041 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:03.558953 [error] [MainThread]: Encountered an error:
+
+[0m22:48:03.578899 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\cli\main.py", line 301, in docs_serve
+    results = task.run()
+  File "C:\Users\arpit\anaconda3\lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\arpit\anaconda3\lib\socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\arpit\anaconda3\lib\selectors.py", line 324, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+  File "C:\Users\arpit\anaconda3\lib\selectors.py", line 315, in _select
+    r, w, x = select.select(r, w, w, timeout)
+KeyboardInterrupt
+
+[0m22:48:03.585437 [debug] [MainThread]: Command `dbt docs serve` failed at 22:48:03.584931 after 361.72 seconds
+[0m22:48:03.586739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878AABAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878E8CAE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001878E8CAE80>]}
+[0m22:48:03.588279 [debug] [MainThread]: Flushing usage events
+[0m22:48:03.619035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7bfe284f-1c4b-43a2-931b-31c7109616fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA06986B50>]}
+[0m22:48:03.830560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7bfe284f-1c4b-43a2-931b-31c7109616fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA069CE4F0>]}
+[0m22:48:03.834570 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:48:04.711242 [debug] [MainThread]: checksum: 2898e47e730fa32147e5ae95c02f42c1d51b8fd2b81922b9b731f0208caf4dff, vars: {}, profile: , target: , version: 1.9.8
+[0m22:48:05.141415 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:48:05.143820 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:48:05.146118 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.my_dbt_project.example
+- models.my_dbt_project.staging
+- models.my_dbt_project.fct
+- models.my_dbt_project.dim
+[0m22:48:05.164363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7bfe284f-1c4b-43a2-931b-31c7109616fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA06EDCE50>]}
+[0m22:48:05.311946 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:48:05.318093 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:48:05.398212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7bfe284f-1c4b-43a2-931b-31c7109616fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA06B51E80>]}
+[0m22:48:05.399820 [info ] [MainThread]: Found 472 macros
+[0m22:48:05.401200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7bfe284f-1c4b-43a2-931b-31c7109616fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA06EAC610>]}
+[0m22:48:05.403174 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:48:05.410004 [debug] [MainThread]: Command end result
+[0m22:48:05.465887 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\arpit\dbt-core\target\manifest.json
+[0m22:48:05.469970 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\arpit\dbt-core\target\semantic_manifest.json
+[0m22:48:05.477711 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\arpit\dbt-core\target\run_results.json
+[0m22:48:05.480454 [debug] [MainThread]: Command `dbt run` succeeded at 22:48:05.480454 after 6.04 seconds
+[0m22:48:05.481757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA02DA89D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA0313C5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA01877970>]}
+[0m22:48:05.482388 [debug] [MainThread]: Flushing usage events
+[0m22:48:05.899820 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:07.608081 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:26.097841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF51E78A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF52CA7790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF52CA7A00>]}
+
+
+============================== 22:48:26.104336 | 812fde42-d66c-4f7e-8164-7df5563e0092 ==============================
+[0m22:48:26.104336 [info ] [MainThread]: Running with dbt=1.9.8
+[0m22:48:26.106888 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:26.740560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '812fde42-d66c-4f7e-8164-7df5563e0092', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF52CA76A0>]}
+[0m22:48:27.126133 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:48:27.128688 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:48:27.133733 [debug] [MainThread]: Command `dbt deps` succeeded at 22:48:27.132984 after 1.33 seconds
+[0m22:48:27.135648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF51E78A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF52CA76A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AF52CA7940>]}
+[0m22:48:27.137079 [debug] [MainThread]: Flushing usage events
+[0m22:48:29.035613 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -8,7 +8,6 @@ FROM
 WHERE
     {% for col in columns %}
         {{ col.name }} IS NULL 
-        {{log("Checking column: " ~ col.name, info=True)}}
        
        
         {% if not loop.last %}

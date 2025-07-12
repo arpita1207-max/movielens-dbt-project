@@ -1,0 +1,10 @@
+version: 2
+
+snapshots:
+  - name: snap_tags
+    description: Snapshot table for user-movie-tag combinations
+    tests:
+      - unique:
+          column_name: row_key
+      - not_null:
+          column_name: tag_timestamp

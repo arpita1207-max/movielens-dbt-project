@@ -50,12 +50,6 @@ models:
         description: Provided rating of the user
         tests:
           - not_null
-snapshots:
-  - name: snap_tags
-    tests:
-      - unique:
-          column_name: row_key
-      - not_null:
-          column_name: tag_timestamp
+
 
 

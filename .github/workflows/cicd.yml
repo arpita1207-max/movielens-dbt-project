@@ -39,7 +39,7 @@ jobs:
         working-directory: my_dbt_project
 
       - name: Run dbt snapshots
-        run: dbt snapshot
+        run: dbt snapshot --profiles-dir ..
         working-directory: my_dbt_project
 
       - name: Run dbt run

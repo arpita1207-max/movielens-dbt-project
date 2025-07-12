@@ -1,15 +1,16 @@
+-- snapshots/snap_tags.sql
 {% snapshot snap_tags %}
 {{
     config(
         target_schema='snapshots',
-        unique_key=["user_id", "movie_id", "tag"],
+        unique_key=["user_id", "movie_id", "tag"], 
         strategy='timestamp',
         updated_at='tag_timestamp',
         invalidate_hard_deletes=True
     )
 }}
 
-select 
+select
   {{ dbt_utils.generate_surrogate_key(['user_id','movie_id','tag']) }} as row_key,
   user_id,
   movie_id,

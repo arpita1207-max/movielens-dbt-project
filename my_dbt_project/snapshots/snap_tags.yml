@@ -3,8 +3,19 @@ version: 2
 snapshots:
   - name: snap_tags
     description: Snapshot table for user-movie-tag combinations
-    tests:
-      - unique:
-          column_name: row_key
-      - not_null:
-          column_name: tag_timestamp
+    columns:
+      - name: row_key
+        description: Unique key for each row in the snapshot.
+        tests:
+          - unique
+          - not_null
+      - name: tag_timestamp
+        description: Timestamp when the tag was created.
+        tests:
+          - not_null
+      - name: user_id
+        description: Identifier for the user.
+      - name: movie_id
+        description: Identifier for the movie.
+      - name: tag
+        description: The actual tag string.

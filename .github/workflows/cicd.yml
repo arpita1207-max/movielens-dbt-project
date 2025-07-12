@@ -33,12 +33,14 @@ jobs:
 
       - name: Clear dbt target directory
         run: rm -rf target
-        
+
       - name: Run dbt deps
         run: dbt deps
         working-directory: my_dbt_project
 
-     
+      - name: Run dbt snapshots
+        run: dbt snapshots
+        working-directory: my_dbt_project
 
       - name: Run dbt run
         run: dbt run --profiles-dir ..

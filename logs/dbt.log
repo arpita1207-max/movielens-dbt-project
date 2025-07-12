@@ -673,3 +673,16 @@ Parsing Error
 [0m22:58:25.797580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D35FD9A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D37DC7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D37DC7F10>]}
 [0m22:58:25.799812 [debug] [MainThread]: Flushing usage events
 [0m22:58:29.785800 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:31:58.793311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B84ACAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B859099A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B85909730>]}
+
+
+============================== 23:31:58.814989 | adbf3987-89b0-47a1-8d17-92742bf35110 ==============================
+[0m23:31:58.814989 [info ] [MainThread]: Running with dbt=1.9.8
+[0m23:31:58.816990 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\arpit\\dbt-core', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\arpit\\dbt-core\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:31:58.933561 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_ACCOUNT'
+[0m23:31:58.937624 [debug] [MainThread]: Command `dbt run` failed at 23:31:58.937119 after 0.59 seconds
+[0m23:31:58.938502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B84ACAA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B858CBBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B858DEBE0>]}
+[0m23:31:58.939178 [debug] [MainThread]: Flushing usage events
+[0m23:32:01.118868 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -2,9 +2,10 @@
 
 ![image](https://github.com/user-attachments/assets/4a53d1dd-7eec-45e2-ad05-d4d339aa8a93)
 
-This dbt project performs data transformations and modeling on the MovieLens dataset, preparing it for analytics and dashboarding. It includes raw data ingestion, dimensional modeling, fact table generation, tests, and quality checks.
+This dbt project performs data transformations and modeling on the Movie Lens dataset, preparing it for analytics and dashboard purposes. It includes raw data ingestion, dimensional modeling, fact table generation, tests, and quality checks.
 
 📁 Project Structure
+
 ```
 my_dbt_project/
 ├── models/
@@ -38,6 +39,7 @@ my_dbt_project/
 ├── dbt_project.yml
 └── README.md
 ```
+
 ```
 ✅ Features
 ✅ Staging Layer to standardize and rename raw columns
@@ -66,6 +68,7 @@ my_dbt_project/
 
 3.Relationship integrity
 ```
+
 ```
 
 📊 Data Flow (Lineage)

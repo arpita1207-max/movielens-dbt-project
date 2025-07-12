@@ -49,8 +49,7 @@ jobs:
       
 
       - name: Run dbt run
-        run: dbt run --profiles-dir ..
-        working-directory: my_dbt_project
+        run: dbt run --profiles-dir .
 
 
       - name: Run dbt test

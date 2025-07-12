@@ -39,17 +39,17 @@ jobs:
      
 
       - name: Run dbt run
-        run: dbt run --profiles-dir .
+        run: dbt run --profiles-dir ..
         working-directory: my_dbt_project
 
 
       - name: Run dbt test
-        run: dbt test --profiles-dir .
+        run: dbt test --profiles-dir ..
         working-directory: my_dbt_project
 
 
       - name: Run dbt docs generate
-        run: dbt docs generate --profiles-dir .
+        run: dbt docs generate --profiles-dir ..
         working-directory: my_dbt_project
 
 

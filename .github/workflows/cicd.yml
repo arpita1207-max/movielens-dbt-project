@@ -31,7 +31,9 @@ jobs:
           pip install dbt-snowflake==1.8.4
 
 
-
+      - name: Clear dbt target directory
+        run: rm -rf target
+        
       - name: Run dbt deps
         run: dbt deps
         working-directory: my_dbt_project

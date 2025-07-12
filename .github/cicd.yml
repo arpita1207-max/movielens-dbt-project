@@ -2,7 +2,7 @@ name: dbt CI
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 env:
   SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
@@ -44,6 +44,6 @@ jobs:
 
       - name: Run dbt docs generate
         run: dbt docs generate --profiles-dir .
-        
+
       - name: Upload dbt docs to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
